@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:masterquiz/Funcoes/botaoTopico.dart';
+import 'Funcoes/addimgtxt.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -19,6 +19,7 @@ class _TopicosState extends State<Topicos> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
+          title: Text('Master o Mestre'),
           actions: <Widget>[
             IconButton(
               //TODO: pesquisar raised button
@@ -41,24 +42,13 @@ class _TopicosState extends State<Topicos> {
               children: <Widget>[Text('Tópicos')],
             ),
             //Linha 1
-            botaoTopico(img: 'teste', txt: 'Navegação'),
+            AddImgTxt(img: 'teste', txt: 'Navegação').addImgTxt(),
             //Linha 2
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                Stack(
-                  alignment: AlignmentDirectional.center,
-                  fit: StackFit.loose,
-                  children: <Widget>[
-                    CircleAvatar(
-                      backgroundColor: Colors.teal,
-                      radius: 45,
-                    ),
-                    CircleAvatar(
-                      backgroundColor: Colors.grey,
-                      radius: 40,
-                    ),
-                  ],
-                ),
+                AddImgTxt(img: 'teste', txt: 'Balizamento').addImgTxt(),
+                AddImgTxt(img: 'teste', txt: 'Cartas').addImgTxt(),
               ],
             ),
           ],
