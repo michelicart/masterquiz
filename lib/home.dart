@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'Funcoes/addimgtxt.dart';
+import 'package:masterquiz/Funcoes/addimgtxt.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -12,6 +13,8 @@ class Topicos extends StatefulWidget {
   @override
   _TopicosState createState() => _TopicosState();
 }
+
+AddImgTxt addImgTxt = AddImgTxt();
 
 class _TopicosState extends State<Topicos> {
   @override
@@ -42,13 +45,26 @@ class _TopicosState extends State<Topicos> {
               children: <Widget>[Text('Tópicos')],
             ),
             //Linha 1
-            AddImgTxt(img: 'teste', txt: 'Navegação').addImgTxt(),
+            // AddImgTxt(img: 'teste', txt: 'Navegação', onpr: '').addImgTxt(),
+            addImgTxt.add(
+                context: context,
+                img: 'teste',
+                txt: 'Navegação',
+                onpr: '/navegacao'),
             //Linha 2
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                AddImgTxt(img: 'teste', txt: 'Balizamento').addImgTxt(),
-                AddImgTxt(img: 'teste', txt: 'Cartas').addImgTxt(),
+                addImgTxt.add(
+                    context: context,
+                    img: 'teste',
+                    txt: 'Balizamento',
+                    onpr: '/balizamento'),
+                addImgTxt.add(
+                    context: context,
+                    img: 'teste',
+                    txt: 'Cartas',
+                    onpr: '/cartas'),
               ],
             ),
           ],

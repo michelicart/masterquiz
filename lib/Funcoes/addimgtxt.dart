@@ -6,10 +6,15 @@ class AddImgTxt {
   String onpr;
 
   //construtor
-  AddImgTxt({this.img, this.txt, this.onpr});
+//  AddImgTxt({this.img, this.txt, this.onpr});
 
 //metodo
-  addImgTxt() {
+  add({
+    BuildContext context,
+    String img,
+    String txt,
+    String onpr,
+  }) {
     return Column(
       children: <Widget>[
         Stack(
@@ -24,13 +29,13 @@ class AddImgTxt {
             SizedBox(
               width: 80,
               height: 80,
-              child: FloatingActionButton(
+              child: GestureDetector(
                 child: CircleAvatar(
                   backgroundImage: AssetImage('img/$img.jpg'),
                   radius: 40,
                 ),
-                onPressed: () {
-                  print('apertou');
+                onTap: () {
+                  Navigator.pushNamed(context, '$onpr');
                 },
               ),
             ),
