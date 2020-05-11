@@ -74,6 +74,12 @@
       "languageVersion": "2.0"
     },
     {
+      "name": "js",
+      "rootUri": "file:///Users/mihelicart/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.1+1",
+      "packageUri": "lib/",
+      "languageVersion": "1.19"
+    },
+    {
       "name": "matcher",
       "rootUri": "file:///Users/mihelicart/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/matcher-0.12.6",
       "packageUri": "lib/",
@@ -106,6 +112,12 @@
     {
       "name": "quiver",
       "rootUri": "file:///Users/mihelicart/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/quiver-2.0.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "rflutter_alert",
+      "rootUri": "file:///Users/mihelicart/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/rflutter_alert-1.0.3",
       "packageUri": "lib/",
       "languageVersion": "2.0"
     },
@@ -176,7 +188,7 @@
       "languageVersion": "2.1"
     }
   ],
-  "generated": "2020-05-04T17:42:10.010173Z",
+  "generated": "2020-05-10T14:39:39.647109Z",
   "generator": "pub",
   "generatorVersion": "2.7.2"
 }

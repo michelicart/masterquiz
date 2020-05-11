@@ -17,6 +17,8 @@ environment:
   sdk: ">=2.1.0 <3.0.0"
 
 dependencies:
+  js: ^0.6.1+1
+  rflutter_alert: ^1.0.3
   flutter:
     sdk: flutter
 

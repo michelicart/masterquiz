@@ -5,6 +5,7 @@ class Criapergunta {
   String respostaC;
   String respostaD;
   String respostaCerta;
+  String img;
 
   Criapergunta(
       {this.pergunta,
@@ -12,5 +13,6 @@ class Criapergunta {
       this.respostaB,
       this.respostaC,
       this.respostaD,
-      this.respostaCerta});
+      this.respostaCerta,
+      this.img});
 }

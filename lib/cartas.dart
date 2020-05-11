@@ -18,6 +18,6 @@ class TextoPergunta extends StatefulWidget {
 class _TextoPerguntaState extends State<TextoPergunta> {
   @override
   Widget build(BuildContext context) {
-    return Text(dadosPerguntas.getPergunta());
+//    return Text(dadosPerguntas.getPergunta());
   }
 }
